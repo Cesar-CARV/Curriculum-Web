@@ -1,0 +1,50 @@
+.curriculum{
+    display: flex;
+    max-width: 1200px;
+    width: 80vw;
+    font-size: 14px;
+    background: var(--background-white);
+    margin: auto;
+}
+
+.article-personal-info{
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 300px;
+    min-width: 200px;
+    max-width: 300px;
+    background: var(--background-light);
+}
+
+.article-personal-info .hobbies .card{
+    width: 100px;
+    height: 100px;
+}
+
+.article-info{
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 800px;
+}
+
+@media (max-width: 800px){
+    .curriculum{
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+    .article-personal-info{
+        max-width: none;
+    }
+    .article-info{
+        width: 100vw;
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 550px){
+    .curriculum{
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+}

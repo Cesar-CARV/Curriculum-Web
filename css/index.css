@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-blue: rgb(10, 46, 189);
+    --background-dark-blue: rgb(1, 19, 90);
+    --background-white: rgb(255, 255, 255);
+    --background-light: rgb(212, 220, 247);
+    --background-gray: rgb(189, 200, 245);
+    --background-dark: rgb(27, 27, 58);
+    --background-black: rgb(13, 13, 19);
+
+    --text-color-blue: rgb(10, 38, 151);
+    --text-color-cyan: rgb(110, 216, 255);
+    --text-color-white: rgb(246, 253, 255);
+    --text-color-black: rgb(0,0,0);
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--background-black);
+    overflow-x: hidden;
+}
+
+#header{
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background: var(--background-black);
+}
+
+.header__nav{
+    width: 100%;
+}
+
+.nav__list{
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between
+}
+
+.nav__list li{
+    flex-shrink: 1;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav__list li a{
+    text-decoration: none;
+    color: var(--background-white);
+
+}
+
+main{
+    padding: 20px;
+}
+
+
+.text-color--blue{
+    color: var(--text-color-blue);
+}
+.text-color--cyan{
+    color: var(--text-color-cyan);
+}
+.text-color--white{
+    color: var(--text-color-white);
+}
+.text-color--black{
+    color: var(--text-color-black);
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 10px 0px;
+}
+
+
+h3::after{
+    content: "//";
+    color: var(--text-color-blue);
+}
+
+.hr-1{
+    border: solid 1px var(--background-gray);
+    margin: 5px auto;
+    width: 80%;
+}
+
+.hr-2{
+    border: solid 2px var(--background-blue);
+    border-radius: 2px;
+    margin: 10px auto;
+    width: 80%;
+}
+
+i{
+    margin: 5px;
+}
+
+progress{
+    border: solid 1px var(--text-color-blue);
+    border-radius: 3px;
+    height: 10px;
+    color: var(--background-blue);
+    background: var(--background-gray);
+}
+
+.container{
+    margin: 5px;
+    width: 100%;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 550px){
+    main{
+        padding: 0px;
+        overflow-x: hidden;
+    }
+}

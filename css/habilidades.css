@@ -1,0 +1,21 @@
+.section-habilidades{
+    margin: 20px 0px;
+}
+
+.container-habilidades{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.container-habilidades div{
+    text-align: center;
+    margin: 5px;
+}
+
+@media (max-width: 550px){
+    .container-habilidades{
+        width: 100%;
+    }
+}

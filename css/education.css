@@ -1,0 +1,37 @@
+.section-education{
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.section-education .flag--1p{
+    padding: 5px;
+    margin: 0px 20px 0px 0px;
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-container__education{
+    cursor: pointer;
+    display: flex;
+    margin: 15px;
+    border-radius: 5px;
+    padding-right: 5px;
+    background: var(--background-light);
+    transition:  transform .2s linear;
+}
+
+.education-container__education:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 3px 2px var(--background-blue);
+}
+
+.education-container__education h4{
+    text-align: left;
+}
+
+.education__info{
+    width: 100%;
+}
