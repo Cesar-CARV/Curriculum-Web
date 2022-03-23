@@ -1,21 +1,21 @@
-.section-habilidades{
+.section-skills{
     margin: 20px 0px;
 }
 
-.container-habilidades{
+.container-skills{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
 }
-.container-habilidades div{
+.container-skills div{
     text-align: center;
     margin: 5px;
 }
 
 @media (max-width: 550px){
-    .container-habilidades{
+    .container-skills{
         width: 100%;
     }
 }
